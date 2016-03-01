@@ -17,11 +17,6 @@ namespace ooh_calc
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         public void Calculate(object sender, EventArgs e)
         {
             String firstString = textBox1.Text;
