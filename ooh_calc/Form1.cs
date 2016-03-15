@@ -34,6 +34,7 @@ namespace ooh_calc
         public void SingleCalculate(object sender, EventArgs e)
         {
             String firstString = textBox1.Text;
+            double asas;
             Double first = Convert.ToDouble(firstString);
             Double answer = 0;
             ISingleCalculator calculator = OneArgCalculationFactory.CreateSingleCalculator(((Button)sender).Name);
