@@ -35,8 +35,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textAnswer = new System.Windows.Forms.TextBox();
-            this.buttonSinus = new System.Windows.Forms.Button();
+            this.buttonASinus = new System.Windows.Forms.Button();
             this.buttonSqr = new System.Windows.Forms.Button();
+            this.buttonACos = new System.Windows.Forms.Button();
+            this.buttonSqrt = new System.Windows.Forms.Button();
+            this.buttonLn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonDivide
@@ -91,14 +94,14 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(13, 27);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(293, 20);
+            this.textBox1.Size = new System.Drawing.Size(368, 20);
             this.textBox1.TabIndex = 15;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(13, 69);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(293, 20);
+            this.textBox2.Size = new System.Drawing.Size(368, 20);
             this.textBox2.TabIndex = 16;
             // 
             // textAnswer
@@ -107,20 +110,20 @@
             this.textAnswer.Location = new System.Drawing.Point(13, 112);
             this.textAnswer.Name = "textAnswer";
             this.textAnswer.ReadOnly = true;
-            this.textAnswer.Size = new System.Drawing.Size(293, 20);
+            this.textAnswer.Size = new System.Drawing.Size(368, 20);
             this.textAnswer.TabIndex = 17;
             // 
-            // buttonSinus
+            // buttonASinus
             // 
-            this.buttonSinus.BackColor = System.Drawing.Color.Tan;
-            this.buttonSinus.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSinus.Location = new System.Drawing.Point(12, 218);
-            this.buttonSinus.Name = "buttonSinus";
-            this.buttonSinus.Size = new System.Drawing.Size(69, 58);
-            this.buttonSinus.TabIndex = 18;
-            this.buttonSinus.Text = "sin";
-            this.buttonSinus.UseVisualStyleBackColor = false;
-            this.buttonSinus.Click += new System.EventHandler(this.SingleCalculate);
+            this.buttonASinus.BackColor = System.Drawing.Color.Tan;
+            this.buttonASinus.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonASinus.Location = new System.Drawing.Point(12, 218);
+            this.buttonASinus.Name = "buttonASinus";
+            this.buttonASinus.Size = new System.Drawing.Size(69, 58);
+            this.buttonASinus.TabIndex = 18;
+            this.buttonASinus.Text = "asin";
+            this.buttonASinus.UseVisualStyleBackColor = false;
+            this.buttonASinus.Click += new System.EventHandler(this.SingleCalculate);
             // 
             // buttonSqr
             // 
@@ -134,13 +137,52 @@
             this.buttonSqr.UseVisualStyleBackColor = false;
             this.buttonSqr.Click += new System.EventHandler(this.SingleCalculate);
             // 
+            // buttonACos
+            // 
+            this.buttonACos.BackColor = System.Drawing.Color.Tan;
+            this.buttonACos.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonACos.Location = new System.Drawing.Point(87, 218);
+            this.buttonACos.Name = "buttonACos";
+            this.buttonACos.Size = new System.Drawing.Size(69, 58);
+            this.buttonACos.TabIndex = 20;
+            this.buttonACos.Text = "acos";
+            this.buttonACos.UseVisualStyleBackColor = false;
+            this.buttonACos.Click += new System.EventHandler(this.SingleCalculate);
+            // 
+            // buttonSqrt
+            // 
+            this.buttonSqrt.BackColor = System.Drawing.Color.Tan;
+            this.buttonSqrt.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSqrt.Location = new System.Drawing.Point(162, 218);
+            this.buttonSqrt.Name = "buttonSqrt";
+            this.buttonSqrt.Size = new System.Drawing.Size(69, 58);
+            this.buttonSqrt.TabIndex = 21;
+            this.buttonSqrt.Text = "sqrt";
+            this.buttonSqrt.UseVisualStyleBackColor = false;
+            this.buttonSqrt.Click += new System.EventHandler(this.SingleCalculate);
+            // 
+            // buttonLn
+            // 
+            this.buttonLn.BackColor = System.Drawing.Color.Tan;
+            this.buttonLn.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonLn.Location = new System.Drawing.Point(312, 218);
+            this.buttonLn.Name = "buttonLn";
+            this.buttonLn.Size = new System.Drawing.Size(69, 58);
+            this.buttonLn.TabIndex = 22;
+            this.buttonLn.Text = "ln";
+            this.buttonLn.UseVisualStyleBackColor = false;
+            this.buttonLn.Click += new System.EventHandler(this.SingleCalculate);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 459);
+            this.Controls.Add(this.buttonLn);
+            this.Controls.Add(this.buttonSqrt);
+            this.Controls.Add(this.buttonACos);
             this.Controls.Add(this.buttonSqr);
-            this.Controls.Add(this.buttonSinus);
+            this.Controls.Add(this.buttonASinus);
             this.Controls.Add(this.textAnswer);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -164,8 +206,11 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textAnswer;
-        private System.Windows.Forms.Button buttonSinus;
+        private System.Windows.Forms.Button buttonASinus;
         private System.Windows.Forms.Button buttonSqr;
+        private System.Windows.Forms.Button buttonACos;
+        private System.Windows.Forms.Button buttonSqrt;
+        private System.Windows.Forms.Button buttonLn;
     }
 }
 

@@ -44,9 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="one arg\ACos.cs" />
+    <Compile Include="one arg\Ln.cs" />
     <Compile Include="one arg\OneArgCalculationFactory.cs" />
-    <Compile Include="one arg\Sinus.cs" />
+    <Compile Include="one arg\ASinus.cs" />
     <Compile Include="one arg\Sqr.cs" />
+    <Compile Include="one arg\Sqrt.cs" />
     <Compile Include="two args\Add.cs" />
     <Compile Include="two args\CalculatorFactory.cs" />
     <Compile Include="two args\Divide.cs" />

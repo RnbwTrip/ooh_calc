@@ -8,10 +8,16 @@ namespace ooh_calc.one_arg
         {
             switch (name)
             {
-                case "buttonSinus":
-                    return new Sinus();
+                case "buttonASinus":
+                    return new ASinus();
                 case "buttonSqr":
                     return new Sqr();
+                case "buttonACos":
+                    return new ACos();
+                case "buttonSqrt":
+                    return new Sqrt();
+                case "buttonLn":
+                    return new Ln();
                 default: throw new ArgumentException("Произошла ошибка", "name");
             }
         }
