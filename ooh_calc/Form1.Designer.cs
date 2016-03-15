@@ -35,6 +35,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textAnswer = new System.Windows.Forms.TextBox();
+            this.buttonSinus = new System.Windows.Forms.Button();
+            this.buttonSqr = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonDivide
@@ -108,11 +110,37 @@
             this.textAnswer.Size = new System.Drawing.Size(293, 20);
             this.textAnswer.TabIndex = 17;
             // 
+            // buttonSinus
+            // 
+            this.buttonSinus.BackColor = System.Drawing.Color.Tan;
+            this.buttonSinus.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSinus.Location = new System.Drawing.Point(12, 218);
+            this.buttonSinus.Name = "buttonSinus";
+            this.buttonSinus.Size = new System.Drawing.Size(69, 58);
+            this.buttonSinus.TabIndex = 18;
+            this.buttonSinus.Text = "sin";
+            this.buttonSinus.UseVisualStyleBackColor = false;
+            this.buttonSinus.Click += new System.EventHandler(this.SingleCalculate);
+            // 
+            // buttonSqr
+            // 
+            this.buttonSqr.BackColor = System.Drawing.Color.Tan;
+            this.buttonSqr.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSqr.Location = new System.Drawing.Point(237, 218);
+            this.buttonSqr.Name = "buttonSqr";
+            this.buttonSqr.Size = new System.Drawing.Size(69, 58);
+            this.buttonSqr.TabIndex = 19;
+            this.buttonSqr.Text = "sqr";
+            this.buttonSqr.UseVisualStyleBackColor = false;
+            this.buttonSqr.Click += new System.EventHandler(this.SingleCalculate);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 459);
+            this.Controls.Add(this.buttonSqr);
+            this.Controls.Add(this.buttonSinus);
             this.Controls.Add(this.textAnswer);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -136,6 +164,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textAnswer;
+        private System.Windows.Forms.Button buttonSinus;
+        private System.Windows.Forms.Button buttonSqr;
     }
 }
 

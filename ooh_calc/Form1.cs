@@ -24,24 +24,23 @@ namespace ooh_calc
             Double first = Convert.ToDouble(firstString);
             Double second = Convert.ToDouble(secondString);
             Double answer = 0;
-            switch (((Button) sender).Name)
-            {
-                case "buttonPlus":
-                    answer = first + second;
-                    break;
-                case "buttonMinus":
-                    answer = first - second;
-                    break;
-                case "buttonMultiply":
-                    answer = first*second;
-                    break;
-                case "buttonDivide":
-                    answer = first/second;
-                    break;
-            }
+            ICalculator calculator = CalculatorFactory.CreateCalculator(((Button) sender).Name);
+            answer = calculator.Calculate(first, second);
             String answerString = Convert.ToString(answer);
             textAnswer.Text = answerString;
 
         }
+
+        public void SingleCalculate(object sender, EventArgs e)
+        {
+            String firstString = textBox1.Text;
+            Double first = Convert.ToDouble(firstString);
+            Double answer = 0;
+            ISingleCalculator calculator = OneArgCalculationFactory.CreateSingleCalculator(((Button)sender).Name);
+            answer = calculator.Calculate(first);
+            String answerString = Convert.ToString(answer);
+            textAnswer.Text = answerString;
+        }
+
     }
 }

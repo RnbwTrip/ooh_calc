@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ooh_calc
 {
-    interface ICalculator
+    public interface ICalculator
     {
         double Calculate (double first, double second);
     }

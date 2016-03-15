@@ -44,18 +44,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add.cs" />
-    <Compile Include="CalculatorFactory.cs" />
-    <Compile Include="Divide.cs" />
+    <Compile Include="one arg\OneArgCalculationFactory.cs" />
+    <Compile Include="one arg\Sinus.cs" />
+    <Compile Include="one arg\Sqr.cs" />
+    <Compile Include="two args\Add.cs" />
+    <Compile Include="two args\CalculatorFactory.cs" />
+    <Compile Include="two args\Divide.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ICalculator.cs" />
-    <Compile Include="Minus.cs" />
-    <Compile Include="Multiply.cs" />
+    <Compile Include="two args\ICalculator.cs" />
+    <Compile Include="one arg\ISingleCalculator.cs" />
+    <Compile Include="two args\Minus.cs" />
+    <Compile Include="two args\Multiply.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -83,6 +87,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
