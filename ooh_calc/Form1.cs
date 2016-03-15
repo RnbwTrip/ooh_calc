@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using ooh_calc.one_arg;
+using ooh_calc.two_args;
 
 namespace ooh_calc
 {
@@ -34,7 +29,6 @@ namespace ooh_calc
         public void SingleCalculate(object sender, EventArgs e)
         {
             String firstString = textBox1.Text;
-            double asas;
             Double first = Convert.ToDouble(firstString);
             Double answer = 0;
             ISingleCalculator calculator = OneArgCalculationFactory.CreateSingleCalculator(((Button)sender).Name);

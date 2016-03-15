@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ooh_calc
+﻿namespace ooh_calc.two_args
 {
     public class Minus: ICalculator
     {
