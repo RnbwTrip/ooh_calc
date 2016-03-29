@@ -18,6 +18,16 @@ namespace ooh_calc.one_arg
                     return new Sqrt();
                 case "buttonLn":
                     return new Ln();
+                case "buttonTan":
+                    return new Tan();
+                case "buttonATan":
+                    return new ATan();
+                case "buttonCos":
+                    return new Cos();
+                case "buttonSin":
+                    return new Sin();
+
+
                 default: throw new ArgumentException("Произошла ошибка", "name");
             }
         }

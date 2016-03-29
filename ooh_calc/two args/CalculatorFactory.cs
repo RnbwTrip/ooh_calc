@@ -16,6 +16,16 @@ namespace ooh_calc.two_args
                     return new Multiply();
                 case "buttonDivide":
                     return new Divide();
+                case "buttonPow":
+                    return new Pow();
+                case "buttonLog":
+                    return new Log();
+                case "buttonDiv":
+                    return new Div();
+                case "buttonMod":
+                    return new Mod();
+                case "buttonPercent":
+                    return new Percent();
                 default: throw new ArgumentException("Произошла ошибка","name");
             }
 

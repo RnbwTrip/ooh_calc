@@ -45,13 +45,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="one arg\ACos.cs" />
+    <Compile Include="one arg\ATan.cs" />
+    <Compile Include="one arg\Cos.cs" />
     <Compile Include="one arg\Ln.cs" />
     <Compile Include="one arg\OneArgCalculationFactory.cs" />
     <Compile Include="one arg\ASinus.cs" />
+    <Compile Include="one arg\Sin.cs" />
     <Compile Include="one arg\Sqr.cs" />
     <Compile Include="one arg\Sqrt.cs" />
+    <Compile Include="one arg\Tan.cs" />
     <Compile Include="two args\Add.cs" />
     <Compile Include="two args\CalculatorFactory.cs" />
+    <Compile Include="two args\Percent.cs" />
+    <Compile Include="two args\Mod.cs" />
+    <Compile Include="two args\Div.cs" />
     <Compile Include="two args\Divide.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -61,10 +68,12 @@
     </Compile>
     <Compile Include="two args\ICalculator.cs" />
     <Compile Include="one arg\ISingleCalculator.cs" />
+    <Compile Include="two args\Log.cs" />
     <Compile Include="two args\Minus.cs" />
     <Compile Include="two args\Multiply.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="two args\Pow.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
