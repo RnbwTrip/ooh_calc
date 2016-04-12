@@ -6,12 +6,13 @@ namespace ooh_calc.Tests.TwoArgument
     [TestFixture]
     public class DivideTest
     {
-        [Test]
-        public void BasicTestDivide()
+        [TestCase(4, 2, 2)]
+        [TestCase(8000000, 20000, 400)]
+        public void BasicTestDivide(double first, double second, double expected)
         {
             ICalculator calculator = new Divide();
-            double result = calculator.Calculate(7, 3);
-            Assert.AreEqual(2.33333,result,0.00001);
+            double result = calculator.Calculate(first, second);
+            Assert.AreEqual(expected, result);
         }
     }
 }

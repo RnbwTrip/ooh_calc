@@ -6,12 +6,13 @@ namespace ooh_calc.Tests.TwoArgument
     [TestFixture]
     public class PowTest
     {
-        [Test]
-        public void BasicTestPow()
+        [TestCase(8, 2, 64)]
+        [TestCase(10, 8, 100000000)]
+        public void BasicTestPow(double first, double second, double expected)
         {
             ICalculator calculator = new Pow();
-            double result = calculator.Calculate(5,3);
-            Assert.AreEqual(125,result);
+            double result = calculator.Calculate(first, second);
+            Assert.AreEqual(expected, result);
         }
     }
 }

@@ -6,12 +6,13 @@ namespace ooh_calc.Tests.TwoArgument
     [TestFixture]
     public class MultiplyTest
     {
-        [Test]
-        public void BasicTestMultiply()
+        [TestCase(8, 2, 16)]
+        [TestCase(10000, 8, 80000)]
+        public void BasicTestMultiply(double first, double second, double expected)
         {
             ICalculator calculator = new Multiply();
-            double result = calculator.Calculate(5,3);
-            Assert.AreEqual(15,result);
+            double result = calculator.Calculate(first, second);
+            Assert.AreEqual(expected, result);
         }
     }
 }
