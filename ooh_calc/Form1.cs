@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
-using ooh_calc.one_arg;
-using ooh_calc.two_args;
+using ooh_calc.OneArgument;
+using ooh_calc.TwoArgument;
 
 namespace ooh_calc
 {
