@@ -6,6 +6,10 @@ namespace ooh_calc.TwoArgument
     {
         public double Calculate(double first, double second)
         {
+            if (second == 0)
+            {
+                throw new ArgumentException("Деление на ноль недопустимо", "second");
+            }
             return (int)((Math.Round(first))%(Math.Round(second)));
         }
     }

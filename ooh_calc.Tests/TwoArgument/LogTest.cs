@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 using ooh_calc.TwoArgument;
 
 namespace ooh_calc.Tests.TwoArgument
@@ -14,5 +15,27 @@ namespace ooh_calc.Tests.TwoArgument
             double result = calculator.Calculate(first, second);
             Assert.AreEqual(expected, result, 0.0001);
         }
+
+        [Test]
+        public void ExceptionTest()
+        {
+            ICalculator calculator = new Log();
+            Assert.Throws<ArgumentException>(() => calculator.Calculate(-3, 10));
+        }
+        
+        [Test]
+        public void Exception2Test()
+        {
+            ICalculator calculator = new Log();
+            Assert.Throws<ArgumentException>(() => calculator.Calculate(10, -5));
+        }
+
+        [Test]
+        public void Exception3Test()
+        {
+            ICalculator calculator = new Log();
+            Assert.Throws<ArgumentException>(() => calculator.Calculate(10, 1));
+        }
+
     }
 }

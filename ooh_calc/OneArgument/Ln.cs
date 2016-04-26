@@ -6,6 +6,10 @@ namespace ooh_calc.OneArgument
     {
         public double Calculate(double first)
         {
+            if (first < 0)
+            {
+                throw new ArgumentException("Натуральный логарифм нельзя взять от отрицательного числа", "first");
+            }
             return Math.Log(first);
         }
     }
