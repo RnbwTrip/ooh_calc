@@ -2,8 +2,24 @@
 
 namespace ooh_calc.TwoArgument
 {
+    /// <summary>
+    /// Public Class.
+    /// Exists "Calculate" function, which performs logarithm.
+    /// </summary>
     public class Log: ICalculator
     {
+        /// <summary>
+        /// Perfoming logarithm
+        /// </summary>
+        /// <param name="first">
+        /// Number
+        /// </param>
+        /// <param name="second">
+        /// Logarithmic base
+        /// </param>
+        /// <returns>
+        /// Returns the quotient
+        /// </returns>
         public double Calculate(double first, double second)
         {
             if ((second == 1) && (second<0))
